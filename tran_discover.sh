@@ -7,3 +7,4 @@ mysql --defaults-extra-file=./conf.properties appsone -se "select name from view
 
 rm -rf transaction_service.txt
 echo "transaction_service file delered"
+echo "githook testing"
