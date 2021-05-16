@@ -19,7 +19,7 @@ pipeline {
 		stage('build')
 		{
 		steps{
-		sh script: 'maven clean package'
+		sh script: 'mvn clean package'
 			}
 		}
 		stgae('Archive arttifact')
