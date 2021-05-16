@@ -31,7 +31,7 @@ pipeline {
 		stage('Nexus uploader')
 		{
 		steps{
-		nexusArtifactUploader artifacts: [[artifactId: 'sample', classifier: '', file: 'target/sample-1.1.1-SNAPSHOT.jar', type: 'jar']], credentialsId: 'Nexus', groupId: 'io.buildpacks.example', nexusUrl: '192.168.13.128:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'Devops', version: '1.1.1'
+		nexusArtifactUploader artifacts: [[artifactId: 'sample', classifier: '', file: 'target/sample-1.0.0-SNAPSHOT.jar', type: 'jar']], credentialsId: 'Nexus', groupId: 'io.buildpacks.example', nexusUrl: '192.168.13.128:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'Devops', version: '1.1.1'
 			}
 		}
 		
