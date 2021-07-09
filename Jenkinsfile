@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 		tools{
-		maven 'Maven_128'
+		maven 'Maven'
 		}
 	stages{
 		stage('Intial')
