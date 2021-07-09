@@ -13,7 +13,7 @@ pipeline {
 		stage('cleanWS')
 		{
 			steps{
-				cleanWS()
+				cleanWs()
 		}}
 	
 		stage('Git')
