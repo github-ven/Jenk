@@ -10,11 +10,12 @@ pipeline {
 		echo "Job started"
 			}
 		}
-		stage('cleanWS')
+		stage('clean')
 		{
 			steps{
 				cleanWs()
-		}}
+		}
+		}
 	
 		stage('Git')
 		{
