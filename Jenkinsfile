@@ -38,7 +38,7 @@ pipeline {
 		stage('Nexus uploader')
 		{
 		steps{
-		nexusArtifactUploader artifacts: [[artifactId: 'spring-boot-starter-parent', classifier: '', file: 'target/spring-boot-starter-parent-1.2.5.RELEASE.jar', type: 'jar']], credentialsId: 'nexususer', groupId: 'org.springframework.boot', nexusUrl: '192.168.13.128:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops', version: '1.2.5'
+		nexusArtifactUploader artifacts: [[artifactId: 'boxfuse-sample-java-springboot-hello', classifier: '', file: 'target/boxfuse-sample-java-springboot-hello-0-SNAPSHOT.jar', type: 'jar']], credentialsId: 'nexususer', groupId: 'com.boxfuse.samples', nexusUrl: '192.168.13.128:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'devops', version: '1.2.5'
 			}
 		}
 		
