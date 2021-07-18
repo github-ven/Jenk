@@ -20,7 +20,7 @@ pipeline {
 		stage('Git')
 		{
 		steps{
-		git branch: 'nexus_new', credentialsId: 'b1416bb9-0629-4ef3-a4a2-39cacc1b28a9', url: 'https://github.com/github-ven/Jenk.git'
+		git branch: 'box_fuse', credentialsId: 'b1416bb9-0629-4ef3-a4a2-39cacc1b28a9', url: 'https://github.com/github-ven/Jenk.git'
 			}
 		}
 		stage('build')
